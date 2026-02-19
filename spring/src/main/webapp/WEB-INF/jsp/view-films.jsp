@@ -2,7 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
     <head>
-        <title>View Books</title>
+        <title>View Films</title>
         <link href="<c:url value="/css/common.css"/>" rel="stylesheet" type="text/css">
     </head>
     <nav class="navbar navbar-expand navbar-light bg-light px-3">
@@ -17,17 +17,17 @@
         <table>
             <thead>
                 <tr>
-                    <th>ISBN</th>
                     <th>Name</th>
-                    <th>Author</th>
+                    <th>Director</th>
+                    <th>Published in</th>
                 </tr>
             </thead>
             <tbody>
-                <c:forEach items="${books}" var="book">
+                <c:forEach items="${films}" var="film">
                     <tr>
-                        <td>${book.isbn}</td>
-                        <td>${book.name}</td>
-                        <td>${book.author}</td>
+                        <td>${film.name}</td>
+                        <td>${film.director}</td>
+                        <td>${film.publishYear}</td>
                     </tr>
                 </c:forEach>
             </tbody>

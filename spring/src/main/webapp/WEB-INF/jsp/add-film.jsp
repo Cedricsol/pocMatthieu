@@ -3,7 +3,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Add Book</title>
+        <title>Add Film</title>
     </head>
     <nav class="navbar navbar-expand navbar-light bg-light px-3">
         <a class="navbar-brand" href="/">Home</a>
@@ -14,15 +14,15 @@
     </nav>
     <h1>Made with spring boot JSP</h1>
     <body>
-        <c:if test="${addBookSuccess}">
-            <div>Successfully added Book with ISBN: ${savedBook.isbn}</div>
+        <c:if test="${addFilmSuccess}">
+            <div>Successfully added Film with name: ${savedFilm.name}</div>
         </c:if>
     
-        <c:url var="add_book_url" value="/book/addBook"/>
-        <form:form action="${add_book_url}" method="post" modelAttribute="book">
-            <form:label path="isbn">ISBN: </form:label> <form:input type="text" path="isbn"/>
-            <form:label path="name">Book Name: </form:label> <form:input type="text" path="name"/>
-            <form:label path="author">Author Name: </form:label> <form:input path="author"/>
+        <c:url var="add_Film_url" value="/film/addFilm"/>
+        <form:form action="${add_film_url}" method="post" modelAttribute="film">
+            <form:label path="name">Film Name: </form:label> <form:input type="text" path="name"/>
+            <form:label path="director">Director: </form:label> <form:input type="text" path="director"/>
+            <form:label path="publishYear">Published in: </form:label> <form:input path="publishYear"/>
             <input type="submit" value="submit"/>
         </form:form>
     </body>

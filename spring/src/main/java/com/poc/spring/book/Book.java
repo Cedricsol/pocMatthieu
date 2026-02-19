@@ -1,4 +1,4 @@
-package com.poc.spring;
+package com.poc.spring.book;
 
 public class Book {
     private String isbn;

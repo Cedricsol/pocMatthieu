@@ -1,4 +1,4 @@
-package com.poc.spring;
+package com.poc.spring.book;
 
 import java.util.Collection;
 
