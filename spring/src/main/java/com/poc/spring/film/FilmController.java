@@ -35,7 +35,7 @@ public class FilmController {
     
     @PostMapping("/addFilm")
     public RedirectView addFilm(@ModelAttribute("film") Film film, RedirectAttributes redirectAttributes) {
-        final RedirectView redirectView = new RedirectView("film/addFilm");
+        final RedirectView redirectView = new RedirectView("addFilm");
         Film savedFilm = filmService.addFilm(film);
         redirectAttributes.addFlashAttribute("savedFilm", savedFilm);
         redirectAttributes.addFlashAttribute("addFilmSuccess", true);

@@ -1,0 +1,22 @@
+<head>
+  <title>List of registered films</title>
+</head>
+
+<h1>Made with Angular</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Director</th>
+      <th>Published in</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let film of films">
+      <td>{{ film.name }}</td>
+      <td>{{ film.director }}</td>
+      <td>{{ film.publishYear }}</td>
+    </tr>
+  </tbody>
+</table>

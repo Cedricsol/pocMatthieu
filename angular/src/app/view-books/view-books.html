@@ -1,0 +1,22 @@
+<head>
+  <title>List of registered books</title>
+</head>
+
+<h1>Made with Angular</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ISBN</th>
+      <th>Name</th>
+      <th>Author</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.isbn }}</td>
+      <td>{{ book.name }}</td>
+      <td>{{ book.author }}</td>
+    </tr>
+  </tbody>
+</table>
