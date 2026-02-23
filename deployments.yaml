@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: angular
+  name: angular
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: angular
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: angular
+    spec:
+      containers:
+      - image: docker-poc-angular:latest
+        name: angular
+        ports:
+        - containerPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: spring
+  name: spring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: spring
+    spec:
+      containers:
+      - image: docker-poc-spring:latest
+        name: spring
+        ports:
+        - containerPort: 80
+status: {}
