@@ -2,15 +2,13 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: minimal-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
   - http:
       paths:
-      - path: /apache
-        pathType: ImplementationSpecific
+      - path: /book
+        pathType: Prefix
         backend:
           service:
             name: angular-svc

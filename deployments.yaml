@@ -16,7 +16,7 @@ spec:
         app: angular
     spec:
       containers:
-      - image: docker-poc-angular:latest
+      - image: ghcr.io/jeremyrobert04/pocmatthieu/docker-poc-angular:latest
         name: angular
         ports:
         - containerPort: 80
@@ -39,7 +39,7 @@ spec:
         app: spring
     spec:
       containers:
-      - image: docker-poc-spring:latest
+      - image: ghcr.io/jeremyrobert04/pocmatthieu/docker-poc-spring:latest
         name: spring
         ports:
         - containerPort: 80
