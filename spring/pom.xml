@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.poc</groupId>
 	<artifactId>spring</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring</name>
 	<description>the spring part of the poc</description>
