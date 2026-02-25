@@ -11,7 +11,7 @@ body {
 
 .menu {
   height: 100%;
-  width: 10%;
+  width: 7.5%;
   background-color: #d9d9d9;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ a {
   width: 55%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4vh;
   align-items: center;
   font-family: "Roboto", sans-serif;
   color: darkslategray;
@@ -32,17 +32,19 @@ a {
 }
 
 img {
-  width: 4rem;
-  height: 4rem;
+  width: 3.25vw;
+  height: 3.25vw;
 }
 
 a:hover img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3.5vw;
+  height: 3.5vw;
 }
 
 span {
-  margin-top: 0.5rem;
+  width: 150%;
+  text-align: center;
+  margin-top: 1vh;
 }
 
 a:hover span {
@@ -50,8 +52,8 @@ a:hover span {
 }
 
 .container {
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin-left: 1.5vw;
+  margin-top: 1.5vh;
 }
 
 h1 {
