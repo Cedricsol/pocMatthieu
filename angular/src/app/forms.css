@@ -1,0 +1,51 @@
+.form-background {
+  padding: 2vh;
+  background-color: rgb(194, 245, 194);
+  width: 28%;
+}
+
+h2 {
+  margin-top: 1vh;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  margin-bottom: 1vh;
+}
+
+form {
+  margin-top: 2vh;
+  box-sizing: border-box;
+}
+
+form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+form input {
+  border-radius: 3px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 2px #b6b6b6;
+  border: none;
+  padding: 2%;
+  margin-bottom: 3vh;
+  width: 25vw;
+  box-sizing: border-box;
+}
+
+button[type='submit'] {
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  display: block;
+  width: 100%;
+  background-color: lavender;
+  border: none;
+  padding: 1vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}

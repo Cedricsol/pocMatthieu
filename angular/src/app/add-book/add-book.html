@@ -2,18 +2,22 @@
   <title>Add a book</title>
 </head>
 
-<h1>Made with Angular</h1>
+<div class="container">
+  <h1>Made with Angular</h1>
+  <div class="form-background">
+    <h2>Register a Book</h2>
+    <div *ngIf="message">
+      {{ message }}
+    </div>
 
-<div *ngIf="message">
-  {{ message }}
+    <form (ngSubmit)="onSubmit()">
+      <label>ISBN: </label>
+      <input type="text" [(ngModel)]="book.isbn" name="isbn" />
+      <label>Book Name: </label>
+      <input type="text" [(ngModel)]="book.name" name="name" />
+      <label>Author Name: </label>
+      <input type="text" [(ngModel)]="book.author" name="author" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </div>
-
-<form (ngSubmit)="onSubmit()">
-  <label>ISBN: </label>
-  <input type="text" [(ngModel)]="book.isbn" name="isbn" />
-  <label>Book Name: </label>
-  <input type="text" [(ngModel)]="book.name" name="name" />
-  <label>Author Name: </label>
-  <input type="text" [(ngModel)]="book.author" name="author" />
-  <button type="submit">Submit</button>
-</form>

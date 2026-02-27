@@ -2,18 +2,23 @@
   <title>Add a film</title>
 </head>
 
-<h1>Made with Angular</h1>
+<div class="container">
+  <h1>Made with Angular</h1>
+  <div class="form-background">
+    <h2>Register a Film</h2>
 
-<div *ngIf="message">
-  {{ message }}
+    <div *ngIf="message">
+      {{ message }}
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+      <label>Film Name: </label>
+      <input type="text" [(ngModel)]="film.name" name="name" />
+      <label>Director: </label>
+      <input type="text" [(ngModel)]="film.director" name="director" />
+      <label>Published in: </label>
+      <input type="text" [(ngModel)]="film.publishYear" name="publishYear" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </div>
-
-<form (ngSubmit)="onSubmit()">
-  <label>Film Name: </label>
-  <input type="text" [(ngModel)]="film.name" name="name" />
-  <label>Director: </label>
-  <input type="text" [(ngModel)]="film.director" name="director" />
-  <label>Published in: </label>
-  <input type="text" [(ngModel)]="film.publishYear" name="publishYear" />
-  <button type="submit">Submit</button>
-</form>
