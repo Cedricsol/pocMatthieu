@@ -7,7 +7,7 @@ import { FilmService } from '../film-service';
   selector: 'app-view-film',
   imports: [CommonModule],
   templateUrl: './view-film.html',
-  styleUrl: './view-film.css',
+  styleUrls: ['../tables.css', './view-film.css'],
   standalone: true,
 })
 export class ViewFilm {

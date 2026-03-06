@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-add-book',
   imports: [FormsModule, CommonModule],
   templateUrl: './add-book.html',
-  styleUrl: './add-book.css',
+  styleUrls: ['../forms.css', './add-book.css'],
   standalone: true,
 })
 export class AddBook {

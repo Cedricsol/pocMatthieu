@@ -7,7 +7,7 @@ import { BookService } from '../book-service';
   selector: 'app-view-books',
   imports: [CommonModule],
   templateUrl: './view-books.html',
-  styleUrl: './view-books.css',
+  styleUrls: ['../tables.css', './view-books.css'],
   standalone: true,
 })
 export class ViewBooks {

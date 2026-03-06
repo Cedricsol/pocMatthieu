@@ -5,17 +5,45 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
     <title>Home</title>
+    <link href="<c:url value='/css/common.css' />" rel="stylesheet" />
+    <link href="<c:url value='/css/home.css' />" rel="stylesheet" />
   </head>
-  <nav class="navbar navbar-expand navbar-light bg-light px-3">
-    <a class="navbar-brand" href="/">Home</a>
-    <a class="navbar-brand" href="/book/addBook">add book</a>
-    <a class="navbar-brand" href="/book/viewBooks">view books</a>
-    <a class="navbar-brand" href="/film/addFilm">add film</a>
-    <a class="navbar-brand" href="/film/viewFilms">view films</a>
-  </nav>
-  <h1>Made with spring boot JSP</h1>
-
-  <div class="container mt-4">
-    <h1>Welcome to home page</h1>
-  </div>
+  <body>
+    <nav class="menu">
+      <a class="nav-item" href="/">
+        <div class="svgBox">
+          <img src="assets/home.svg" />
+        </div>
+        <span>Home</span>
+      </a>
+      <a class="nav-item" href="/book/addBook">
+        <div class="svgBox">
+          <img src="assets/add_book.svg" />
+        </div>
+        <span>Add Book</span>
+      </a>
+      <a class="nav-item" href="/book/viewBooks">
+        <div class="svgBox">
+          <img src="assets/view_books.svg" />
+        </div>
+        <span>View Books</span>
+      </a>
+      <a class="nav-item" href="/film/addFilm">
+        <div class="svgBox">
+          <img src="assets/add_film.svg" />
+        </div>
+        <span>Add Film</span>
+      </a>
+      <a class="nav-item" href="/film/viewFilms">
+        <div class="svgBox">
+          <img src="assets/view_films.svg" />
+        </div>
+        <span>View Films</span>
+      </a>
+    </nav>
+    <div class="container">
+      <h1>Made with spring boot JSP</h1>
+      <h2>Welcome to home page</h2>
+    </div>
+  </body>
 </html>

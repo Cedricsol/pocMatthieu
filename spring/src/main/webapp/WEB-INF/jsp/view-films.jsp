@@ -3,34 +3,62 @@
 <html>
     <head>
         <title>View Films</title>
-        <link href="<c:url value="/css/common.css"/>" rel="stylesheet" type="text/css">
+        <link href="<c:url value='/css/common.css' />" rel="stylesheet">
+        <link href="<c:url value='/css/tables.css' />" rel="stylesheet">
     </head>
-    <nav class="navbar navbar-expand navbar-light bg-light px-3">
-        <a class="navbar-brand" href="/">Home</a>
-        <a class="navbar-brand" href="/book/addBook">add book</a>
-        <a class="navbar-brand" href="/book/viewBooks">view books</a>
-        <a class="navbar-brand" href="/film/addFilm">add film</a>
-        <a class="navbar-brand" href="/film/viewFilms">view films</a>
+    <nav class="menu">
+      <a class="nav-item" href="/">
+        <div class="svgBox">
+          <img src="../assets/home.svg" />
+        </div>
+        <span>Home</span>
+      </a>
+      <a class="nav-item" href="/book/addBook">
+        <div class="svgBox">
+          <img src="../assets/add_book.svg" />
+        </div>
+        <span>Add Book</span>
+      </a>
+      <a class="nav-item" href="/book/viewBooks">
+        <div class="svgBox">
+          <img src="../assets/view_books.svg" />
+        </div>
+        <span>View Books</span>
+      </a>
+      <a class="nav-item" href="/film/addFilm">
+        <div class="svgBox">
+          <img src="../assets/add_film.svg" />
+        </div>
+        <span>Add Film</span>
+      </a>
+      <a class="nav-item" href="/film/viewFilms">
+        <div class="svgBox">
+          <img src="../assets/view_films.svg" />
+        </div>
+        <span>View Films</span>
+      </a>
     </nav>
-    <h1>Made with spring boot JSP</h1>
     <body>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Director</th>
-                    <th>Published in</th>
-                </tr>
-            </thead>
-            <tbody>
-                <c:forEach items="${films}" var="film">
+        <div class="container">
+            <h1>Made with spring boot JSP</h1>
+            <table>
+                <thead>
                     <tr>
-                        <td>${film.name}</td>
-                        <td>${film.director}</td>
-                        <td>${film.publishYear}</td>
+                        <th>Name</th>
+                        <th>Director</th>
+                        <th>Published in</th>
                     </tr>
-                </c:forEach>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <c:forEach items="${films}" var="film">
+                        <tr>
+                            <td>${film.name}</td>
+                            <td>${film.director}</td>
+                            <td>${film.publishYear}</td>
+                        </tr>
+                    </c:forEach>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>

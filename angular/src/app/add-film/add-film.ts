@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-add-film',
   imports: [FormsModule, CommonModule],
   templateUrl: './add-film.html',
-  styleUrl: './add-film.css',
+  styleUrls: ['../forms.css', './add-film.css'],
 })
 export class AddFilm {
   film: Film = new Film('', '', '');
