@@ -8,7 +8,7 @@ RUN --mount=type=cache,target=/root/.npm npm config set strict-ssl false && npm 
 
 COPY . .
 
-RUN npm run build
+RUN npx ng build --base-href / --deploy-url /ng/
 
 FROM nginx:1.29.5 AS runner
 
