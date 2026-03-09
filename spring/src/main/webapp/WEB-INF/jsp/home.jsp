@@ -12,31 +12,31 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <nav class="menu">
       <a class="nav-item" href="/">
         <div class="svgBox">
-          <img src="assets/home.svg" />
+          <img src="assets/spring_home.svg" />
         </div>
         <span>Home</span>
       </a>
       <a class="nav-item" href="/book/addBook">
         <div class="svgBox">
-          <img src="assets/add_book.svg" />
+          <img src="assets/spring_add_book.svg" />
         </div>
         <span>Add Book</span>
       </a>
       <a class="nav-item" href="/book/viewBooks">
         <div class="svgBox">
-          <img src="assets/view_books.svg" />
+          <img src="assets/spring_view_books.svg" />
         </div>
         <span>View Books</span>
       </a>
       <a class="nav-item" href="/film/addFilm">
         <div class="svgBox">
-          <img src="assets/add_film.svg" />
+          <img src="assets/spring_add_film.svg" />
         </div>
         <span>Add Film</span>
       </a>
       <a class="nav-item" href="/film/viewFilms">
         <div class="svgBox">
-          <img src="assets/view_films.svg" />
+          <img src="assets/spring_view_films.svg" />
         </div>
         <span>View Films</span>
       </a>
