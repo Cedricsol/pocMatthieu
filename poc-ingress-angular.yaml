@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-angular
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /ng(/|$)(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: angular-svc
+            port:
+              number: 80
+      - path: /book(/|$)(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: angular-svc
+            port:
+              number: 80
