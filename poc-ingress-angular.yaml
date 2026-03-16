@@ -16,10 +16,3 @@ spec:
             name: angular-svc
             port:
               number: 80
-      - path: /book(/|$)(.*)
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: angular-svc
-            port:
-              number: 80

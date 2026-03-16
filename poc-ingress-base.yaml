@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: base-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /assets
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: angular-svc
+            port:
+              number: 80
+      - path: /book
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: angular-svc
+            port:
+              number: 80
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: spring-svc
+            port:
+              number: 80
