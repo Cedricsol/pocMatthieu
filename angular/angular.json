@@ -25,7 +25,9 @@
                 "output": "ng"
               }
             ],
-            "styles": ["src/styles.css"]
+            "styles": ["src/styles.css"],
+            "baseHref": "/",
+            "deployUrl": "/ng/"
           },
           "configurations": {
             "production": {
