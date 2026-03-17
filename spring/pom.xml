@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.poc</groupId>
 	<artifactId>spring</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring</name>
 	<description>the spring part of the poc</description>
@@ -37,12 +38,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>3.2.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
-			<version>10.1.18</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>

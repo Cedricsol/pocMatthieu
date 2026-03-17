@@ -1,0 +1,64 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<html>
+    <head>
+        <title>View Books</title>
+        <link href="<c:url value='/css/common.css'/>" rel="stylesheet">
+        <link href="<c:url value='/css/tables.css' />" rel="stylesheet">
+    </head>
+    <nav class="menu">
+      <a class="nav-item" href="/">
+        <div class="svgBox">
+          <img src="<c:url value='/image/spring_home.svg' />" />
+        </div>
+        <span>Home</span>
+      </a>
+      <a class="nav-item" href="/book/addBook">
+        <div class="svgBox">
+          <img src="<c:url value='/image/spring_add_book.svg' />" />
+        </div>
+        <span>Add Book</span>
+      </a>
+      <a class="nav-item" href="/book/viewBooks">
+        <div class="svgBox">
+          <img src="<c:url value='/image/spring_view_books.svg' />" />
+        </div>
+        <span>View Books</span>
+      </a>
+      <a class="nav-item" href="/film/addFilm">
+        <div class="svgBox">
+          <img src="<c:url value='/image/spring_add_film.svg' />" />
+        </div>
+        <span>Add Film</span>
+      </a>
+      <a class="nav-item" href="/film/viewFilms">
+        <div class="svgBox">
+          <img src="<c:url value='/image/spring_view_films.svg' />" />
+        </div>
+        <span>View Films</span>
+      </a>
+    </nav>
+    <body>
+        <div class="container">
+            <h1>Made with spring boot JSP</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ISBN</th>
+                        <th>Name</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <c:forEach items="${books}" var="book">
+                        <tr>
+                            <td>${book.isbn}</td>
+                            <td>${book.name}</td>
+                            <td>${book.author}</td>
+                        </tr>
+                    </c:forEach>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
