@@ -34,16 +34,19 @@ img {
 a:hover img {
   width: 3.5vw;
   height: 3.5vw;
+  cursor: pointer;
 }
 
 span {
   width: 150%;
   text-align: center;
   margin-top: 1vh;
+  text-decoration: underline;
 }
 
 a:hover span {
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .container {
