@@ -38,6 +38,20 @@
         </div>
         <span>View Films</span>
       </a>
+      <form action="/logout" method="post" class="nav-item-form">
+        <input
+          type="hidden"
+          name="${_csrf.parameterName}"
+          value="${_csrf.token}"
+        />
+
+        <button type="submit" class="nav-item-button">
+          <div class="svgBox">
+            <img src="<c:url value='/image/spring_logout.svg' />" />
+          </div>
+          <span>Log Out</span>
+        </button>
+      </form>
     </nav>
     <body>
         <div class="container">

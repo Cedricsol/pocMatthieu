@@ -40,6 +40,20 @@ prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         </div>
         <span>View Films</span>
       </a>
+      <form action="/logout" method="post" class="nav-item-form">
+        <input
+          type="hidden"
+          name="${_csrf.parameterName}"
+          value="${_csrf.token}"
+        />
+
+        <button type="submit" class="nav-item-button">
+          <div class="svgBox">
+            <img src="<c:url value='/image/spring_logout.svg' />" />
+          </div>
+          <span>Log Out</span>
+        </button>
+      </form>
     </nav>
     <div class="container">
       <h1>Made with spring boot JSP</h1>
